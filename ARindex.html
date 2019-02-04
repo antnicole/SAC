@@ -4,7 +4,7 @@
 <body style='margin : 0px; overflow: hidden;'>
 	<a-scene embedded arjs='debugUIEnabled: false; sourceType: webcam;'>
         <a-assets>
-             <video id="PeriodVideo" autoplay loop="true" src="ThisIsYourPeriodin2MinutesGlamour.mp4"></video>
+             <video id="PeriodVideo" autoplay loop="true" src="SAC/ThisIsYourPeriodin2MinutesGlamour.mp4"></video>
         </a-assets>
         
         <a-marker preset=’hiro’>
@@ -15,6 +15,16 @@
                 height="1.5"
                 width="2.7">
             </a-video>
+		
+	            <!-- Adding animated circle lights to scene-->
+            <a-sphere position="0.5 1.5 -0.5" color="white" radius="0.15">
+                <a-animation
+                    attribute="color"
+                    dur="10000"
+                    from="white"
+                    to="green"
+                    repeat="indefinite"></a-animation>
+            </a-sphere>
         </a-marker>
 		<a-entity camera></a-entity>
 	</a-scene>
