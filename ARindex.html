@@ -2,6 +2,14 @@
 <script src="https://aframe.io/releases/0.8.2/aframe.min.js"></script>
 <script src="https://cdn.rawgit.com/jeromeetienne/AR.js/1.6.2/aframe/build/aframe-ar.js"></script>
 <body style='margin : 0px; overflow: hidden;'>
+	
+	// trick to wait until arjsSystem is isReady
+		var startedAt = Date.now()
+		var timerId = setInterval(function(){
+			var anchorEl = _this.el
+			var anchorComponent = anchorEl.components['arjs-anchor']
+			// wait until anchorComponent is isReady
+	
 	<a-scene embedded arjs='debugUIEnabled: false; sourceType: webcam;'>
         	<a-assets timeout="5000">
              		<video id="PeriodVideo" autoplay loop="true" src="ThisIsYourPeriodin2MinutesGlamour.mp4"></video>
