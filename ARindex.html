@@ -8,7 +8,6 @@
              		<video id="PeriodVideo" autoplay loop="true" src="ThisIsYourPeriodin2MinutesGlamour.mp4"></video>
         	</a-assets>
         
-        	<a-marker preset=’hiro’>
             		<!-- Adding video file to scene + marker-->
             		<a-video
                 		src="#PeriodVideo"    
@@ -16,8 +15,7 @@
                 		height="1.5"
                 		width="2.7">
             		</a-video>
-        	</a-marker>
-		
-		<a-entity camera></a-entity>
+
+		<a-marker-camera preset='hiro'></a-marker-camera>
 	</a-scene>
 </body>
