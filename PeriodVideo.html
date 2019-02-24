@@ -8,13 +8,13 @@
         	</a-assets>
         
         	<a-marker preset=’hiro’>
-            		<!-- Adding video texture to scene + marker-->
-			<a-entity geometry="primitive: box" 
-				  material="src: #PeriodVideo" 
-				  rotation="90 180 0"
-				  height="1.5"
-				  width="2.7">
-			</a-entity>
+            		<!-- Adding video file to scene + marker-->
+            		<a-video
+                		src="#PeriodVideo"    
+                		rotation="90 180 0"
+                		height="1.5"
+                		width="2.7">
+            		</a-video>
         	</a-marker>
 		
 		<a-entity camera></a-entity>
