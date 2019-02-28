@@ -4,7 +4,8 @@
 <body style='margin : 0px; overflow: hidden;'>
 	<a-scene embedded arjs='debugUIEnabled: false; sourceType: webcam;'>
         	<a-assets timeout="5000">
-             		<video id="PeriodVideo" autoplay loop="true" src="Assets/ThisIsYourPeriodin2MinutesGlamour.mp4"></video>
+             		<video id="PeriodVideo" preload="auto" response-type="arraybuffer" autoplay loop="true" type="video/mp4" 
+                       src="Assets/ThisIsYourPeriodin2MinutesGlamour.mp4"></video>
         	</a-assets>
         
         	<a-marker preset=’hiro’>
